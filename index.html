@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Question asker site</title>
+    <link rel="stylesheet" href="main.css">
+    <meta http-equiv="Content-Type">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/57ed875866.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="inner-header">
+            <div class="logo-container">
+                <h1>MY<span>SITE</span></h1>
+            </div>
+
+            <ul class="navigation">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Portfolio</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="main-section">
+        <div class="wrapper">
+            <input oninput="func(event)" type="text" class="input" placeholder="What are u looking for?">
+            <div class="searchButton">
+                <a id='link'>
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <figure>
+            <div class="slide">
+                <img src="./images/slide.jpeg">
+            </div>
+            <div class="slide">
+                <img src="./images/slide.jpeg">
+            </div>
+            <div class="slide">
+                <img src="./images/slide.jpeg">
+            </div>
+        </figure>
+    </div>
+
+    <div class="footer">
+        <div class="inner-footer">
+            <div class="logo-container">
+                <img src="./images/logo1.png">
+            </div>
+
+            <div class="footer-third">
+                <h1>Need Help?</h1>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="footer-third">
+                <h1>Information</h1>
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="footer-third">
+                <h1>Follow us</h1>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<script>
+    const link = document.getElementById('link')
+
+    link.href = "https://letmegooglethat.com/?q=question&l=1"
+
+    function func(event) {
+        const value = event.target.value
+        link.href = `https://letmegooglethat.com/?q=${value}&l=1`
+    }
+    </script>
+
+</html>
